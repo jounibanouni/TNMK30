@@ -1,0 +1,61 @@
+@font-face {
+    font-family: gothic;
+    src: url(../FONTS/Gothic/Gothic13.ttf);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: gothic;
+}
+/* NAV ↓ */
+nav{
+  width: 100%;
+  height: auto;
+}
+
+.top-nav{
+  background-color: #2e4e8b;#8db9ff
+  width: auto;
+  height: 80px;
+  display: flex;
+
+}
+
+.top-nav h1{
+  margin: auto;
+  color: #f4fff7;
+  font-size: 3em;
+}
+
+#logo{
+  width: auto;
+  height: 100%;
+
+}
+
+.bot-nav{
+  background-color: #8db9ff;
+  padding: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-btns{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.nav-btn{
+  border: solid 5px #f4fff7;
+  color: #f4fff7;
+  border-radius: 10px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}

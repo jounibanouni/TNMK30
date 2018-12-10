@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <script src="../JS/script.js"></script>
+  <title>TNMK30 - Projektarbete</title>
+
+</head>
+
+<body>
+  <nav>
+    <div class="top-nav"><img id="logo" src="../IMAGES/logopic.jpg" alt="en bild xD">
+      <h1>LEGO</h1>
+    </div>
+    <div class="bot-nav">
+      <div id="nav-btns">
+        <div class="nav-btn">
+          <p>Mina satser</p>
+        </div>
+        <div class="nav-btn">
+          <p>Mina bitar</p>
+        </div>
+        <input type="text">
+        <div class="nav-btn">
+          <p>Sök</p>
+        </div>
+        <!-- kanske ska vara input submit istället för div-->
+      </div>
+    </div>
+
+  </nav>
