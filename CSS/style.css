@@ -59,3 +59,25 @@ nav{
   justify-content: center;
   font-size: 2em;
 }
+/* MAIN ↓ */
+
+main{
+  width: 80%; 
+  margin: auto;
+  margin-top: 35px;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+}
+
+
+.setPic{
+  width: 150px;
+  height: 180px;
+  float: left;
+}
+
+.setList{
+  float: left;
+  margin-left: 40px;
+}
