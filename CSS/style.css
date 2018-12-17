@@ -68,12 +68,16 @@ main{
   display: flex;
   font-size: 30px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+.setBox{
+  width: 600px;
+  margin-bottom: 50px;
+}
 
 .setPic{
-  width: 150px;
-  height: 180px;
+
   float: left;
 }
 
