@@ -18,15 +18,15 @@
     </div>
     <div class="bot-nav">
       <div id="nav-btns">
-        <div class="nav-btn">
-          <p>Mina satser</p>
+        <div class="nav-btn" onclick="redirectMySets()">
+          <p>My Sets</p>
         </div>
         <div class="nav-btn">
-          <p>Mina bitar</p>
+          <p>My Parts</p>
         </div>
         <input type="text">
         <div class="nav-btn">
-          <p>Sök</p>
+          <p>Search</p>
         </div>
         <!-- kanske ska vara input submit istället för div-->
       </div>
