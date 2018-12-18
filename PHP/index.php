@@ -87,6 +87,8 @@
 
     $query = mysqli_query($connection, "SELECT sets.SetID, sets.Setname FROM sets, collection WHERE collection.SetID=sets.SetID LIMIT 20");
 
+
+
     while($row = mysqli_fetch_array($query)) {
       
       $prefix = "http://www.itn.liu.se/~stegu76/img.bricklink.com/";
@@ -122,6 +124,7 @@
       print('</ul>');
       print("<a class='readMore' href='index.php?setID=$SetID'><p>Read More...</p></a>");
       print('</div>');
+      
     }
   }
     ?>
