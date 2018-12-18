@@ -71,6 +71,7 @@ main{
   flex-wrap: wrap;
 }
 
+/* Divs for each set ↓ */
 .setBox{
   width: 600px;
   margin-bottom: 50px;
@@ -84,4 +85,23 @@ main{
 .setList{
   float: left;
   margin-left: 40px;
+}
+
+.readMore{
+  clear: both;
+  float: right;
+  padding-right: 450px;  
+ 
+}
+
+a{
+  color: #2e4e8b;
+}
+
+a:hover{
+  color: #8db9ff;
+}
+
+a:active{
+  color: #f4fff7;
 }

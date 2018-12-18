@@ -5,14 +5,22 @@
 	if (!$connection) {
 		die('MySQL connection error');
 	}
-  
-  $query = mysqli_query($connection, "SELECT sets.SetID, sets.Setname FROM sets, collection WHERE collection.SetID=sets.SetID LIMIT 20");
-
-  
+   
 ?>
 
 <main>
 <?php
+  if(isset($_GET['setID'])){
+    $SetID = $_GET['setID'];
+    
+    
+
+  }
+
+  else{
+
+    $query = mysqli_query($connection, "SELECT sets.SetID, sets.Setname FROM sets, collection WHERE collection.SetID=sets.SetID LIMIT 20");
+
     while($row = mysqli_fetch_array($query)) {
       
       $prefix = "http://www.itn.liu.se/~stegu76/img.bricklink.com/";
@@ -49,8 +57,10 @@
         print("<li>$quantity x $partName</li>");
       }
       print('</ul>');
+      print("<a class='readMore' href='index.php?setID=$SetID'><p>Read More...</p></a>");
       print('</div>');
     }
+  }
     ?>
   
     <!--<div class="setBox">
