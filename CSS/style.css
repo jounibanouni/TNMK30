@@ -144,3 +144,9 @@ table{
   border-top: solid black 2px;
   margin-top: 40px;
 }
+
+
+.pagination{
+  width:100%;
+  text-align: center;
+}

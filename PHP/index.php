@@ -34,7 +34,7 @@
       else { 
         $filename = "noimage_small.png";
       }
-
+      
       $picSource = $prefix . $filename;
 
     print("<div id='fullSet'>");
@@ -47,6 +47,9 @@
       print("<th>Picture</th><th>Quantity</th><th>Part Name</th> <th>Color</th> <th>Part ID</th> </tr>\n");
 
 
+      
+
+    
     while($row = mysqli_fetch_array($query)) {
       $quantity = $row['Quantity'];
       $partName = $row['Partname'];
@@ -54,6 +57,8 @@
       $colorName = $row['Colorname'];
       $colorID = $row['ColorID'];
       $itemID = $row['ItemID'];
+
+      //Kolla om bitarna i $SetID från ovan^ finns i din samling
 
       $prefix = "http://www.itn.liu.se/~stegu76/img.bricklink.com/";
       $SetID = $row['SetID'];

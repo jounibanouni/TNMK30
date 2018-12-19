@@ -13,11 +13,11 @@
 
 <body>
   <nav>
-    <div class="top-nav"><img id="logo" src="../IMAGES/logopic.jpg" alt="en bild xD">
+    <div class="top-nav"><img id="logo" src="../IMAGES/logopic.jpg" alt="en bild xD" onclick="redirectMySets()">
       <h1>LEGO</h1>
     </div>
     <div class="bot-nav">
-      <div id="nav-btns">
+    <div id="nav-btns">
         <div class="nav-btn" onclick="redirectMySets()">
           <p>My Sets</p>
         </div>
@@ -27,10 +27,11 @@
         <div class="nav-btn">
           <p>My Parts</p>
         </div>
-        <input type="text">
-        <div class="nav-btn">
-          <p>Search</p>
-        </div>
+        <form method="get" action="search_results.php">
+        <input type="text" name="search" placeholder="Enter atleast 3 char" required size="30" minlength="3">
+        <input type="submit" value="Sök">
+        <span class="validity"></span>
+    </form>
         <!-- kanske ska vara input submit istället för div-->
       </div>
     </div>

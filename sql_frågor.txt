@@ -1,2 +1,23 @@
 select sets.Setname from sets, collection WHERE collection.SetID=sets.SetID;
  $contents = mysqli_query($connection, "SELECT inventory.Quantity, inventory.ItemTypeID, inventory.ItemID, inventory.ColorID, colors.Colorname, parts.Partname FROM inventory, parts, colors WHERE inventory.SetID='375-2' AND inventory.ItemTypeID='P' AND inventory.ItemID=parts.PartID AND inventory.ColorID=colors.ColorID");
+
+
+categories för sets:
+SELECT categories.CatID, categories.Categoryname FROM categories, sets, collection WHERE sets.SetID=collection.SetID AND sets.CatID=categories.CatID
+
+categories för parts: 
+SELECT categories.CatID, categories.Categoryname FROM categories, sets, collection, parts WHERE sets.SetID=collection.SetID AND sets.CatID=categories.CatID AND parts.CatID=categories.CatID
+
+
+
+
+
+Vi kollar på sats X om vi kan bygga den.
+Sats X innehåller bitar Y.
+Vi jämför bitar Y med våra bitar Z.
+Våra bitar Z baseras på vilka satser V som vi har.
+	
+Jämför:
+	saknas någon?
+	rätt bit, fel färg?
+
